@@ -1,0 +1,42 @@
+.currency-converter {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #74b8c0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.currency-converter .conversion-result {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #688b8f;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #88bab4;
+  animation: fadeInResult 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInResult {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

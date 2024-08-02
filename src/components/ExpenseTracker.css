@@ -1,0 +1,70 @@
+/* .expense-tracker {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 9px solid #489f26;
+    border-radius: 10px;
+    background-color: #273d27;
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+
+
+/* Enhanced CSS with Neumorphism and Dynamic Styling */
+.expense-tracker {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  background-color: #273d27;
+  box-shadow: 
+    inset 8px 8px 15px rgba(0, 0, 0, 0.3), /* Inner shadow for neumorphism effect */
+    8px 8px 15px rgba(0, 0, 0, 0.2);       /* Outer shadow for neumorphism effect */
+  border: 5px solid #489f26; /* Slightly thinner border for a more refined look */
+  animation: fadeIn 1s ease-in-out, pulse 2s infinite; /* Combined animations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 
+        inset 8px 8px 15px rgba(0, 0, 0, 0.3),
+        8px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+      box-shadow: 
+        inset 10px 10px 20px rgba(0, 0, 0, 0.2),
+        10px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+      box-shadow: 
+        inset 8px 8px 15px rgba(0, 0, 0, 0.3),
+        8px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.expense-tracker:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 
+    inset 8px 8px 15px rgba(0, 0, 0, 0.3),
+    8px 8px 25px rgba(0, 0, 0, 0.3); /* Increased outer shadow on hover */
+}
+
+  

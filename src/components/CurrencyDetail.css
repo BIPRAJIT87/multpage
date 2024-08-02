@@ -1,0 +1,97 @@
+/* .currency-detail {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+  }
+  
+  .economic-details {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .economic-details p {
+    margin: 5px 0;
+  }  */
+
+  /* General Styling for the Component */
+/*  
+
+/* General Styling for the Component */
+.currency-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px; /* Restricts maximum width */
+  width: 100%; /* Ensures responsiveness */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+              -8px -8px 16px rgba(238, 233, 233, 0.9); /* Neumorphism shadow */
+  background: #8eccd0; /* Neumorphism background */
+  transition: all 0.3s ease;
+  margin: 13px auto; /* Centers the box and adds vertical spacing */
+}
+
+.currency-detail:hover {
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), 
+              -12px -12px 24px rgba(255, 255, 255, 0.9);
+  background: #d0d0d0; /* Slightly darker background on hover */
+}
+
+/* Heading Styling */
+.currency-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center; /* Centers the heading text */
+  font-weight: bolder;
+}
+
+.currency-detail p{
+  margin: 15px;
+  font-weight: bolder;
+}
+/* Economic Details Styling */
+.economic-details {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 8px rgba(255, 255, 255, 0.9); /* Neumorphism effect */
+  background: #f9f9f9; /* Light background */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensures the economic details take full width within the parent */
+}
+
+.economic-details:hover {
+  background: #e0e0e0; /* Slightly darker background on hover */
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.2),
+              inset -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+/* Paragraph Styling */
+.economic-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Loading and Error Styles */
+.loading, .error {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  text-align: center; /* Centers the text */
+}
